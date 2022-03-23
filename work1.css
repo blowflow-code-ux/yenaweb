@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'PixelFJ';
+    src: url('/fonts/PixelFJVerdana12pt.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'pixel';
+    src: url('fonts/pixelfjverdana12pt.woff') format('woff2'),
+        url('fonts/pixelfjverdana12pt.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.content{
+
+    padding:40px;
+}
+.columns{
+    width:100vw;
+    height:58px;
+}
+.column1{
+    height:74px;
+}
+.lines{
+width:calc(100% - 100px);
+height: 2px;
+background-color: rgb(236, 236, 236);
+}
+.line1{
+    height:4px;
+    background-color: rgb(231, 230, 230);
+}
+
+.columns h1{
+    font-family: 'pixel';
+    font-size: 10px;
+    margin-top: 8px;
+    color: rgb(85, 85, 85);
+    font-weight:700;
+}
+
+.columns .titleP{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.descriptions{
+    transition: height 2s;
+    overflow: hidden;
+    width:100%;
+    height:0px;
+}
+
+.column2{transform: translateY(0px);}
+
+.column3{transform: translateY(0px);}
+
+.column4{transform: translateY(0px);}
+
+.column5{transform: translateY(0px);}
