@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'PixelFJ';
+    src: url('/fonts/PixelFJVerdana12pt.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'pixel';
+    src: url('fonts/pixelfjverdana12pt.woff') format('woff2'),
+        url('fonts/pixelfjverdana12pt.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.content {
+    padding: 40px;
+}
+
+.line {
+    background-color: rgb(184, 184, 184);
+    width: 100%;
+    height: 5px;
+}
+
+.about_title p {
+    font-family: pixel;
+    color: rgb(70, 70, 70);
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.about_container .p_initial {
+    font-family: pixel;
+    color: rgb(70, 70, 70);
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.content_line {
+    height: 2px;
+    background-color: rgb(212, 212, 212);
+}
+
+.about_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 45px 18px;
+    grid-template-areas:
+        ". . . ."
+        ". . . .";
+}
+
+.about_items {
+    background-color: rgb(255, 0, 0);
+    width: auto;
+    height: auto;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/index.css" />
+    <title>Test</title>
+  </head>
+  <body>
+    <header class="testheader">
+      <div>Pre Employment Medical Questionnaire</div>
+      <div class="patientinfo">
+        <div id="date">date</div>
+        <div id="username">name</div>
+      </div>
+    </header>
+    <div class="testtitle">
+      <div class="patientname" id="patientName">name</div>
+      <img src="./images/title.png"></img>
+      <div class="discription">
+        © Copyright 2022 | KABK Mental Health | Formerly known as the KABK
+        Mental Health Association. KMHA provides the superior norm of normality
+        according to the DSM6, The Diagnostic and Statistical Manual of Mental
+        Disorders, Sixth Edition ( DSM-6 ), is the 2022 update to the Diagnostic
+        and Statistical Manual of Mental Disorders, the taxonomic and diagnostic
+        tool published by the KABK Psychiatric Association (KPA). In KABK, the
+        DSM serves as the principal authority for psychiatric diagnoses.
+      </div>
+    </div>
+    <div>
+      <div class="divideline"></div>
+      <div class="testdiscription1">
+        This is a formal mental health test initiatied by Mental Health
+        Association to help your self-diagnosis of the potential mental illness
+        and, by preventing and curing them, enhance society’s well-being.
+      </div>
+      <div class="testdiscription2">
+        In your life, have you had the following thoughts, feelings, or
+        experiences? Rate each item from 1 to 5 as to the extent/desire that you
+        have or had in your life. Please note, all fields are required.
+      </div>
+      <div class="choose">
+        <span style="font-weight: bold;">*</span>
+        <span><span style="font-weight: bold;">5</span> Very Likely</span>
+        <span><span style="font-weight: bold;">4</span> Likely</span>
+        <span><span style="font-weight: bold;">3</span> Somewhat Likely</span>
+        <span><span style="font-weight: bold;">2</span> Unlikely</span>
+        <span><span style="font-weight: bold;">1</span> Highly Unlikely</span>
+      </div>
+    </div>
+    <div>
+      <div class="scorediv">
+        <div class="score">
+          <div>5</div>
+          <div>4</div>
+          <div>3</div>
+          <div>2</div>
+          <div>1</div>
+        </div>
+      </div>
+      <form class="questionform" id="test">
+      <div class="question">
+        <div>When you do something sad, do you feel sad?</div>
+        <div class="radio" id="depress">
+          <input type="radio" name="depressive" value="5" required />
+          <input type="radio" name="depressive" value="4" />
+          <input type="radio" name="depressive" value="3" />
+          <input type="radio" name="depressive" value="2" />
+          <input type="radio" name="depressive" value="1" />
+        </div>
+      </div>
+      <div class="question">
+        <div>you been excited so much that you made a mistake?</div>
+        <div class="radio" id="ad">
+          <input type="radio" name="adhd" value="5" required />
+          <input type="radio" name="adhd" value="4" />
+          <input type="radio" name="adhd" value="3" />
+          <input type="radio" name="adhd" value="2" />
+          <input type="radio" name="adhd" value="1" />
+        </div>
+      </div>
+      <div class="question">
+        <div>Can you remember the following in a minute? :<br>928374111222234500091234502194123842439981623145672300000010</div>
+        <div class="radio" id="auti">
+          <input type="radio" name="autism" value="5" required/>
+          <input type="radio" name="autism" value="4" />
+          <input type="radio" name="autism" value="3" />
+          <input type="radio" name="autism" value="2" />
+          <input type="radio" name="autism" value="1" />
+        </div>
+      </div>
+      <div class="question">
+        <div> Have you ever lied in your life?</div>
+        <div class="radio" id="personal">
+          <input type="radio" name="personality" value="5" required/>
+          <input type="radio" name="personality" value="4" />
+          <input type="radio" name="personality" value="3" />
+          <input type="radio" name="personality" value="2" />
+          <input type="radio" name="personality" value="1" />
+        </div>
+      </div>
+      <div class="question">
+        <div> Do you sometimes doubt whether this is right?</div>
+        <div class="radio" id="para">
+          <input type="radio" name="paranoia" value="5" required/>
+          <input type="radio" name="paranoia" value="4" />
+          <input type="radio" name="paranoia" value="3" />
+          <input type="radio" name="paranoia" value="2" />
+          <input type="radio" name="paranoia" value="1" />
+        </div>
+      </div>
+      <div class="question">
+        <div> For your benefit, can you lend a hand from others?</div>
+        <div class="radio" id="depend">
+          <input type="radio" name="dependent" value="5" required/>
+          <input type="radio" name="dependent" value="4" />
+          <input type="radio" name="dependent" value="3" />
+          <input type="radio" name="dependent" value="2" />
+          <input type="radio" name="dependent" value="1" />
+        </div>
+      </div>
+      <div class="question">
+        <div> Do you have a job?</div>
+        <div class="radio" id="obse">
+          <input type="radio" name="obsessive" value="5" required/>
+          <input type="radio" name="obsessive" value="4" />
+          <input type="radio" name="obsessive" value="3" />
+          <input type="radio" name="obsessive" value="2" />
+          <input type="radio" name="obsessive" value="1" />
+        </div>
+      </div>
+      <div class="question">
+        <div> Can you approach strangers and talk to them easily?</div>
+        <div class="radio" id="anti">
+          <input type="radio" name="antisocial" value="5" required/>
+          <input type="radio" name="antisocial" value="4" />
+          <input type="radio" name="antisocial" value="3" />
+          <input type="radio" name="antisocial" value="2" />
+          <input type="radio" name="antisocial" value="1" />
+        </div>
+      </div>
+      <div class="question">
+        <div>Do you do work only when you feel like to?</div>
+        <div class="radio" id="sch">
+          <input type="radio" name="schizophrenia" value="5" required />
+          <input type="radio" name="schizophrenia" value="4" />
+          <input type="radio" name="schizophrenia" value="3" />
+          <input type="radio" name="schizophrenia" value="2" />
+          <input type="radio" name="schizophrenia" value="1" />
+        </div>
+      </div>
+      <div class="submittest">
+        <input id="submitbutton" type="submit" value="SUBMIT" />
+        <img id="submitimg" src="./images/submit_img.png"/>
+    </div>
+    </form>
+    </div>
+    <script src="./js/test.js"></script>
+  </body>
+</html>

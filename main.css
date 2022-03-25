@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'PixelFJ';
+    src: url('/fonts/PixelFJVerdana12pt.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'dpcomicregular';
+    src: url('fonts/dpcomic-webfont.woff') format('woff2'),
+        url('fonts/dpcomic-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'pixel';
+    src: url('fonts/pixelfjverdana12pt.woff') format('woff2'),
+        url('fonts/pixelfjverdana12pt.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.content{
+    background-image: url("img/main_wallpaper4.png");
+    background-size: auto;
+    /* background: rgb(223,221,220);
+background: linear-gradient(111deg, rgb(207, 207, 207) 13%, rgba(241,241,241,1) 100%); */
+}
+/* this is the right area container */
+.mainRight {
+    /* overflow: hidden; */
+    z-index: 10;
+    float: right;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    /* background-color: rgba(255, 8, 8, 0.74); */
+}
+
+.paper {
+    position: absolute;
+    top: 25%;
+    left:20px;
+    width: 400px;
+    height: 450px;
+    background-image: url("img/paper.jfif");
+    box-shadow: -10px 1px 14px -9px rgba(0,0,0,0.75),-11px -1px 13px -2px rgba(199, 199, 199, 0.75);
+    transform: translateX(0px) rotate(0deg);
+    transition: all 1s ease-in-out;
+}
+
+.poem {
+    z-index: 1;
+    position: absolute;
+    top: 15%;
+    left: 40px;
+    width: 500px;
+    height: 600px;
+    background-image: url("img/main_poem_wallpaper.png");
+    box-shadow: -11px 1px 14px -9px rgba(0,0,0,0.75), -11px -1px 13px -2px rgba(177, 177, 177, 0.75);
+    transform: translateX(0px);
+  transition: all 1s ease-in-out;
+}
+
+    
+@keyframes moving{
+    0%{transform: translateX(0px);}
+    25%{transform: translateX(-10px);}
+    50%{transform: translateX(-20px);}
+    100%{transform: translateX(-900px);}
+
+}
+.poem:hover{
+    transform: translateX(-300px);
+    }
+.poem:hover .paper {
+    animation-name: 'moving';
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+    border: 10px black dotted;
+    }
+    
+    /* rotate(-30deg) */
+.poem p {
+    padding: 20px;
+    font-family: 'pixel';
+    color: rgba(235, 235, 235, 0.911);
+    
+}
+
+.poem .top {
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 44px;
+}
+
+.poem .down {
+    font-size: 8px;
+    line-height: 24px;
+    margin-top: 240px;
+}
+
+.bookcover {
+    z-index: 11;
+    background-color: rgba(255, 255, 255, 0.747);
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    box-shadow: -11px 1px 14px -9px rgba(0, 0, 0, 0.966);
+
+}
+
+.hole {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgba(236, 236, 236, 0);
+    box-shadow: 10px 10px 15px -7px rgba(0, 0, 0, 0.3) inset, 3px 6px 3px 1px rgba(0, 0, 0, 0.3) inset, 59px 53px 48px -11px rgba(88, 88, 88, 0.63) inset;
+}
+
+.bookcover p {
+    font-family: 'pixel';
+    font-size: 8px;
+    color: #505050;
+    font-weight: 500;
+    transform: rotate(90deg) rotate(180deg);
+    position: absolute;
+    right: -90px;
+    top: 132px;
+}
+
+
+.content {
+    /* overflow: hidden; */
+    width: 100vw;
+    position: relative;
+    background-color: rgb(245, 245, 245);
+}
+
+.mainLeft {
+    font-family: 'pixel';
+    font-size: 2.5em;
+    color: #595555;
+    position: absolute;
+    bottom: 100px;
+    left: 30px;
+}
+
+.mainLeft .line {
+    width: 800px;
+    height: 5px;
+    margin-bottom: 30px;
+    background-color: rgb(216, 216, 216);
+
+}
