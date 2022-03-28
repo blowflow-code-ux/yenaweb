@@ -61,25 +61,25 @@ background: linear-gradient(111deg, rgb(207, 207, 207) 13%, rgba(241,241,241,1) 
     transform: translateX(0px);
   transition: all 1s ease-in-out;
 }
-
+/* 
     
 @keyframes moving{
-    0%{transform: translateX(0px);}
-    25%{transform: translateX(-10px);}
-    50%{transform: translateX(-20px);}
-    100%{transform: translateX(-900px);}
-
-}
+    0%{transform: translateY(0px);}
+    25%{transform: translateY(-10px);}
+    50%{transform: translateY(-20px);}
+    100%{transform: translateY(-900px);}
+} */
 .poem:hover{
     transform: translateX(-300px);
     }
-.poem:hover .paper {
-    animation-name: 'moving';
+.poem:hover~.paper {
+    /* animation-name: 'moving';
     animation-delay: 1s;
     animation-duration: 2s;
     animation-timing-function: ease;
-    animation-fill-mode: both;
-    border: 10px black dotted;
+    animation-fill-mode: both; */
+    transform: translateX(-610px);
+    /* border: 10px black dotted; */
     }
     
     /* rotate(-30deg) */

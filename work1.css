@@ -11,13 +11,24 @@
     font-weight: normal;
     font-style: normal;
 }
-.content{
 
+body::-webkit-scrollbar {
+	display:none /* Chrome , Safari , Opera */
+}
+
+body{
+-ms-overflow-style:none /* IE and Edge */;
+scrollbar-width:none /* Firefox */
+}
+
+
+.content{
+    font-family: 'pixel';
     padding:40px;
 }
 .columns{
     width:100vw;
-    height:58px;
+    height:auto;
 }
 .column1{
     height:74px;
@@ -36,6 +47,7 @@ background-color: rgb(236, 236, 236);
     font-family: 'pixel';
     font-size: 10px;
     margin-top: 8px;
+    padding-bottom:2.6em;
     color: rgb(85, 85, 85);
     font-weight:700;
 }
@@ -50,8 +62,22 @@ background-color: rgb(236, 236, 236);
     overflow: hidden;
     width:100%;
     height:0px;
+    /* background-color: rgb(70, 70, 70); */
+        display: grid; 
+        grid-template-columns: 0.6fr 1fr; 
+        grid-template-rows: 1fr; 
+        gap: 45px 18px; 
+        grid-template-areas: 
+          ". ."; 
 }
+/* .description1 .des-left{
+width:100%;
+height: 200px
+}
+.description1 .des-right h2{
+    background-color: brown;
 
+} */
 .column2{transform: translateY(0px);}
 
 .column3{transform: translateY(0px);}
@@ -59,3 +85,80 @@ background-color: rgb(236, 236, 236);
 .column4{transform: translateY(0px);}
 
 .column5{transform: translateY(0px);}
+/* 
+.descriptions{} */
+.des-left{
+overflow: scroll;
+scrollbar-color: none;
+/* background-color: rgb(255, 0, 0); */
+padding:10%;
+-ms-overflow-style:none /* IE and Edge */;
+scrollbar-width:none /* Firefox */
+}
+
+.des-left::-webkit-scrollbar {
+	display:none /* Chrome , Safari , Opera */
+}
+
+.des-right{
+overflow: scroll;
+/* background-color: rgb(17, 0, 255); */
+padding:10%;
+font-size: 0.7em;
+font-weight: 900;
+-ms-overflow-style:none /* IE and Edge */;
+scrollbar-width:none /* Firefox */
+}
+
+.des-right::-webkit-scrollbar {
+	display:none /* Chrome , Safari , Opera */
+}
+
+.button a{   
+    display: inline;
+}
+
+.button {
+    height: 60px;
+    width:100%;
+    margin-top: 10%;
+    transform: scaleX(0px);
+
+  }
+.arrow{
+float:right;
+position: relative;
+width:100%;
+  }
+
+  .arrow_bar1{
+    display: inline-block;
+    width: 42px;
+    height: 2px;
+    background: slategray;
+    transition: all 0.3s ease;
+    /* transform: translateY(-10px);  */
+    transition: all 0.3s ease;
+    transition-delay: 0.8s;
+    /* 0.3 + 0.5 + animation 0.? sec = 0.8s*/
+}
+
+  .arrow_bar2{
+    float:right;
+        width: 0px;
+        height:0px;
+        background: slategray;
+        transition: all 0.5s ease;
+        transition-delay: 0.3s;
+  }
+
+.button:hover .arrow_bar1{
+    transition-delay: 0s;
+      width:95%;
+  }
+  .button:hover .arrow_bar2{
+    width: 2px;
+    height:20px;
+    transform: translateY(-2px) translateX(-27px) rotate(135deg);
+
+}

@@ -1,0 +1,288 @@
+@import "reset.css";
+@import url("https://use.typekit.net/zfo0cha.css");
+
+body {
+  font-family: itc-avant-garde-gothic-pro, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin: 7% 7% 0% 7%;
+}
+
+.inputname {
+  border:none;
+  font-family: itc-avant-grade-gothic-pro, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 50px;
+  margin-right:10%;
+  padding-bottom:20px;
+  border-bottom:3px rgb(100, 100, 100) solid;
+}
+.submit{
+  font-family: itc-avant-grade-gothic-pro, sans-serif;
+  font-weight: 300;
+  cursor: grab;
+  width:200px;
+}
+
+header {
+  display: flex;
+  width: 100vh;
+  justify-content: left;
+}
+
+.greeting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+  height: 80vh;
+  font-family: itc-avant-grade-gothic-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.divider {
+  margin-top: 5px;
+  font-size: 50px;
+  opacity: 0.6;
+  font-weight: 300;
+}
+.nameform {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.testheader {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.patientinfo {
+  display: flex;
+  width: 20vh;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 2px solid;
+  border-color: black;
+  align-items: center;
+  font-family: itc-avant-grade-gothic-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.testtilte {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 50vh;
+}
+
+.patientname {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  font-family: milonguita;
+  font-weight: 400;
+  font-style: normal;
+  font-size: xx-large;
+  margin-top: 20vh;
+}
+
+.testtitle img {
+  display: block;
+  margin: 0px auto;
+  width: 80%;
+  height: auto;
+  margin-top: 3vh;
+}
+
+.discription {
+  display: block;
+  margin: 0px auto;
+  padding-top: 30px;
+  margin-bottom: 30vh;
+  width: 80%;
+  text-align: center;
+}
+
+.divideline {
+  width: 10%;
+  height: 5px;
+  background-color: black;
+  opacity: 0.75;
+  margin-bottom: 15vh;
+}
+
+.testdiscription1 {
+  width: 70%;
+  font-size: 20px;
+  margin-bottom: 5vh;
+  letter-spacing: 2px;
+  line-height: 28px;
+}
+
+.testdiscription2 {
+  width: 50%;
+  font-size: 20px;
+  margin-bottom: 5vh;
+  letter-spacing: 1px;
+  line-height: 22px;
+
+}
+
+.choose {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin-top:5%;
+}
+.choose span{
+  margin-right:10px;
+}
+
+.containerPart2{margin-bottom: 5%;}
+
+.scorediv {
+  display: flex;
+  justify-content: end;
+  padding:2.5%;
+  border-top:1px solid black;
+  border-bottom:1px solid black;
+
+}
+
+.score {
+  display: flex;
+  justify-content: space-between;
+  width: 21%;
+  font-size: 20px;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom:1px solid black;
+  font-size: 1.5rem;
+  font-family: servus-slab;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.question .q p{font-size: 1rem;}
+.question .q{padding:2.5%;}
+
+.radio {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  padding:2.5%;
+  border-left:1px solid black;
+}
+
+.submittest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:10% 0%;
+  
+}
+
+#submitimg {
+  width: 20%;
+  height: auto;
+}
+
+#submitbutton {
+  position: relative;
+  left: 12.4%;
+  border:none;
+  font-size: 24px;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;  
+}
+
+.resulttitle {
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.resultdate {
+  display: flex;
+  justify-content: end;
+  margin-top:10%;
+  margin-bottom:5%;
+}
+.resultdate1 {
+  border-bottom: 2px solid;
+  font-family: milonguita;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+}
+
+.dearname {
+  display: flex;
+  justify-content: first;
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom:5%;
+
+}
+
+.resultname {
+  margin-left: 1%;
+  font-family: milonguita;
+  font-style: normal;
+  
+}
+
+.resultdiscription {
+  margin-top: 2%;
+  font-size: 25px;
+  margin-bottom: 5%;
+
+}
+
+#resultDiv {
+  margin-top: 5%;
+  font-size: 50px;
+  font-family: milonguita;
+  font-style: normal;
+}
+
+.diseasename {
+  width: 100%;
+  border-bottom: 2px solid;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  margin: 5% 0%;
+  width:100%;
+
+}
+footer span{
+position:absolute;
+top:70px;
+}
+footer img{width:150px;height:170px;z-index: 1;
+  position:absolute;
+  top:20px;
+}

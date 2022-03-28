@@ -1,0 +1,57 @@
+
+ .LendingPage_container {
+    height: 100vh;
+    width:100vw;
+    background-color: transparent;
+    overflow: hidden;
+  }
+  .buttons {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    /* z-index: -1; */
+  }
+  .buttons button {
+    border: none;
+    background: rgba(0,0,0,0.02);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .buttons button:hover {
+    background: rgba(0,0,0,0.04);
+  }
+  .buttons #left {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+  }
+
+  .left-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: auto;
+    left: -100%;
+    bottom: auto;
+    right: auto;
+    /* background: #b8b8b8; */
+    transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  .left-layer.active {
+    left: 100%;
+  }
+  .left-layer--2 {
+    /* background: #cecece; */
+    transition-delay: 0.3s;
+  }
+  .left-layer--3 {
+    /* background: #dbdbdb; */
+    transition-delay: 0.12s;
+  }
+  .left-layer--4 {
+    /* background: #cacaca; */
+    transition-delay: 0.08s;
+  }
+  

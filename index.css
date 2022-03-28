@@ -39,7 +39,6 @@ body {
     width: 100vw;
     height: 100vh;
     position: relative;
-    position: fixed;
 }
 
 #top-bar {
@@ -67,8 +66,7 @@ body {
 
 .colorTags {
     position: absolute;
-    top: 20px;
-
+    /* top: 20px; */
 }
 
 .tag-cir {
@@ -359,7 +357,7 @@ body {
 }
 
 .boxes {
-    position: absolute;
+    /* position: absolute; */
     width: 100vw;
     height: 200px;
     -webkit-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.1);
@@ -367,12 +365,15 @@ body {
 }
 
 .box1 {
+    position: absolute;
+
     top: 77px;
     background-color: rgb(233, 233, 233);
     z-index: 2;
 }
 
 .box2 {
+    position: absolute;
     top: 70px;
     background-color: rgb(241, 240, 240);
     z-index: 1;
