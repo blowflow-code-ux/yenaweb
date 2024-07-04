@@ -1,0 +1,25 @@
+P : Go to camera
+F: move camera closer to the obj
+(or, inspector>transoform>position scale 0,0,0)
+
+Right click -> moving the obj(?)
+
+C# : programming launguage used in Unity.
+
+Double: more precise than float (0,1,2,3) it can count as much higher like 20
+Float:number has decimal point , make F at the end of the number.
+
+Different numnber type
+
+-------------CODING----------
+
+<p>:Pharagraph
+<div>:diviser (divide like grouping)
+<:Angle bracket
+shift+tap:indent other way
+Tap:indent
+vh: the viewhight?
+
+Class: assign a property. don't use space
+
+Indent/outdent lines: Windows/Linux: ctrl + [ or ]
