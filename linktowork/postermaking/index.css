@@ -1,0 +1,676 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+a{color:black;
+text-decoration: none;}
+a:visited {
+    color:red;
+}
+
+
+.poster{
+width:100vw;
+height:100vh;
+} */
+
+.poster {
+    background: linear-gradient(130deg, #0020ff, #ffffff);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 97% 0%
+    }
+
+    50% {
+        background-position: 4% 100%
+    }
+
+    100% {
+        background-position: 97% 0%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 97% 0%
+    }
+
+    50% {
+        background-position: 4% 100%
+    }
+
+    100% {
+        background-position: 97% 0%
+    }
+}
+
+/* /* .lettergradient{
+    background: linear-gradient(89deg, white, blue);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:97% 0%}
+    50%{background-position:4% 100%}
+    100%{background-position:97% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:97% 0%}
+    50%{background-position:4% 100%}
+    100%{background-position:97% 0%}
+} */
+/* gradient end */
+
+
+.RE {
+    position: relative;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 62px;
+    color: white;
+    width: 31vw;
+    height: 30vh;
+    background: linear-gradient(130deg, #0020ff, #ffffff)
+}
+
+.Rec-logo {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.C {
+    background-color: red;
+    width: 53px;
+    height: 53px;
+    line-height: 53px;
+    border-radius: 50%;
+    /* position:absolute;
+    top:106px;
+    left:11px; */
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: 5px 5px 10px #a5000071;
+}
+
+p {
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    padding: 1.3vh 1vw 1vh 1.3vw;
+    margin: 0;
+    height: 6vh;
+    color: aliceblue;
+    font-size: 30px;
+
+    font-family: 'Syne', sans-serif;
+
+    word-spacing: 15px;
+    display: flex;
+    background-color: black;
+}
+
+h2 {
+    text-indent: 10px;
+    text-align: left;
+    color: aliceblue;
+    font-size: 18px;
+
+    font-family: 'Syne', sans-serif;
+
+}
+
+.scroll {
+    overflow-y: scroll;
+    width: 31vw;
+    height: 61.7vh;
+    background-color: black;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #222222;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(53, 53, 53);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.playtag {
+    position: absolute;
+    top: 126px;
+    left: 210px;
+    width: 213px;
+    height: 95px;
+    background: linear-gradient(130deg, #0020ff, #ffffff);
+    transform: rotate(-35deg);
+    color: #ffffff;
+    font-size: 33px;
+    font-family: 'Rubik Mono One', sans-serif;
+    line-height: 95px;
+    box-shadow: 5px 5px 10px #1801ac79;
+    transition: color 2s;
+}
+
+.playtag:hover {
+    color: red;
+}
+
+.box-1-1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.venue {
+    position: absolute;
+    top: 311px;
+    left: -36px;
+    width: 400px;
+    height: 70px;
+    background-color: blue;
+    transform: rotate(15deg);
+    color: #ffffff;
+    font-size: 12px;
+    font-family: 'Rubik Mono One', sans-serif;
+    line-height: 70px;
+    box-shadow: 10px 10px 10px #02000f79;
+    transition: background-color 2s, color 2s;
+}
+
+.time {
+    position: absolute;
+    bottom: 226px;
+    left: 330px;
+    width: 190px;
+    height: 70px;
+    background-color: blue;
+    transform: rotate(-25deg);
+    color: #ffffff;
+    font-size: 12px;
+    font-family: 'Rubik Mono One', sans-serif;
+    line-height: 70px;
+    z-index: 1;
+    box-shadow: 10px 10px 10px #02000f79;
+    transition: background-color 2s;
+}
+
+.ticket {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+    transform: skew(30deg);
+    box-shadow: 10px 10px 10px #02000f79;
+    transition: background-color 2s;
+}
+
+.venue:hover, .time:hover, .ticket:hover {
+    background: linear-gradient(130deg, #0020ff, #ffffff);
+    color: #222222;
+
+    /* -webkit-animation: AnimationName 7s ease infinite;
+    animation: AnimationName 7s ease infinite; */
+}
+
+/* box2 */
+/* .box-2{
+    border: 5px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    position:absolute;
+    top:16vh;
+    left:18%;
+    width:700px;
+    height:500px;
+    border-radius: 50%;
+    transform: rotateX(60deg);
+    mix-blend-mode: luminosity;
+    
+}
+.box-3{
+    border: 5px solid rgb(255, 255, 255);
+    position:absolute;
+    top:35vh;
+    left:18%;
+    width:700px;
+    height:500px;
+    border-radius: 50%;
+    transform: rotateX(60deg);
+} */
+#left {
+    width: 31vw;
+}
+
+#right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 69vw;
+
+    /* background-color: bisque; */
+}
+
+.P {
+    position: absolute;
+    top: 1vh;
+    right: 52vw;
+    height: 99vh;
+    width: 16vw;
+    /* background-color: rgb(200, 255, 0); */
+}
+
+.p1 {
+    position: absolute;
+    top: 4vh;
+    left: 0;
+    width: 2px;
+    height: 83.5vh;
+    background-color: #ffffff;
+}
+
+.p2 {
+    border: 2px solid white;
+    width: 100%;
+    height: 50vh;
+}
+
+.L {
+    position: absolute;
+    top: 1vh;
+    right: 35vw;
+    height: 99vh;
+    width: 16vw;
+    /* background-color: rgb(255, 140, 0); */
+}
+
+.l1 {
+    width: 100%;
+    height: 87vh;
+    border-width: 0px 0px 2px 2px;
+    border-color: white;
+    border-style: solid;
+}
+
+
+.A {
+    position: absolute;
+    top: 1vh;
+    right: 18vw;
+    height: 99vh;
+    width: 16vw;
+    /* background-color: rgb(8, 226, 255); */
+}
+
+.a1 {
+    width: 100%;
+    height: 50vh;
+    border-width: 2px 2px 2px 2px;
+    border-color: white;
+    border-style: solid;
+}
+
+.a2 {
+    width: 100%;
+    height: 37vh;
+    border-width: 0px 2px 0px 2px;
+    border-color: white;
+    border-style: solid;
+}
+
+.Y {
+    position: absolute;
+    top: 1vh;
+    right: 1vw;
+    height: 99vh;
+    width: 16vw;
+    /* background-color: rgb(255, 0, 200); */
+}
+
+.y1 {
+    width: 100%;
+    height: 50vh;
+    border-width: 0px 2px 2px 2px;
+    border-color: white;
+    border-style: solid;
+}
+
+.y2 {
+    width: 2px;
+    height: 37.2vh;
+    background-color: white;
+    left: 50%;
+    position: absolute;
+}
+
+.record {
+    position: relative;
+    height: 100vh;
+}
+
+/* transition, animation, toggle....vid */
+.topleft {
+    position: absolute;
+    top: 100px;
+    left: 10%;
+}
+
+.topright {
+    position: absolute;
+    top: 100px;
+    right: 10%;
+    transform: rotate(90deg);
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 200px;
+    left: 10%;
+    transform: rotate(-90deg);
+}
+
+.bottomright {
+    position: absolute;
+    bottom: 200px;
+    right: 10%;
+    transform: rotate(180deg);
+}
+
+.vertical {
+    position: absolute;
+    background-color: aqua;
+    width: 2px;
+    height: 100px;
+}
+
+.horizontal {
+    position: absolute;
+    background-color: aqua;
+    width: 100px;
+    height: 2px;
+}
+
+.bottom_number {
+    position: absolute;
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.number {
+    display: inline;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.bottom123 {
+    display: inline;
+}
+
+.bottom_number_bar {
+    display: inline-block;
+    height: 20px;
+    width: 5px;
+    background-color: white;
+    margin: 0px 10px;
+}
+
+.REC {
+    position: absolute;
+    top: 135px;
+    right: 15%;
+}
+
+.REC_circle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    /* box-shadow: 10px 10px 10px #a500003a; */
+}
+
+.REC_text {
+    display: inline;
+    text-align: left;
+    margin-left: 5px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.battery {
+    position: absolute;
+    left: 15%;
+    top: 129px;
+}
+
+.battery_border {
+    padding: 2px;
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    border: solid 2px white;
+    background-color: none;
+}
+
+.battery_percent {
+    display: inline-block;
+    background-color: white;
+    width: 60%;
+    height: 100%;
+}
+
+.battery_top {
+    display: inline-block;
+    margin-left: -4px;
+    width: 4px;
+    height: 17px;
+    background-color: white;
+}
+
+.triangle {
+    position: absolute;
+    top: 38%;
+    left: 48%;
+    width: 0px;
+    height: 0px;
+    border-top: 18px solid transparent;
+    border-right: 30px solid cyan;
+    border-bottom: 18px solid transparent;
+    transform: rotate(180deg) translate(-50%, -50%);
+    animation: triangle 6s linear infinite;
+}
+
+@keyframes triangle {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#footer {
+    width: 100%;
+    height: 78px;
+    line-height: 78px;
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(0, 255, 255, 0.144);
+    overflow: hidden;
+}
+
+.footer_container {
+    position: absolute;
+    display: flex;
+    animation: scroll-left 32s linear infinite;
+}
+
+h3.footer_text {
+    line-height: 76px;
+    width: 1100px;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 40px;
+    animation: scroll-left 32s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+
+    50% {
+        background-color: #0022ff5e;
+    }
+
+    100% {
+        -moz-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        background-color: rgba(0, 255, 255, 0.37);
+    }
+}
+
+
+#left {
+    animation: loading 3s linear;
+    animation-delay: 0s;
+}
+
+#right {
+    animation: loading 3s linear;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes loading {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.VTT_container {
+    /* height: 100%; */
+    position: absolute;
+    top: 50%;
+    background-color: transparent;
+    transition: transform 5s;
+}
+
+.VTT_container:hover {
+    transform: translate(10vw, -5vw);
+}
+
+/* .VTT_container:nth-child(1):hover {
+    transform: translate(10vw, -5vw) rotate(15deg);
+}
+
+.VTT_container:hover :nth-child(2) {
+    transform: translate(20vw, -5vw);
+}
+
+.VTT_container:hover :nth-child(3) {
+    transform: translate(50vw, -5vw);
+} */
+
+/* 
+.venue{
+    position:absolute;
+    top:311px;
+    left:-36px;
+    width:400px;
+    height:70px;
+    background-color: blue;
+    transform: rotate(15deg);
+    color:#ffffff;
+    font-size: 12px;
+    font-family: 'Rubik Mono One', sans-serif;
+    line-height: 70px;
+    box-shadow: 10px 10px 10px #02000f79;
+    transition: background-color 2s, color 2s;
+}
+.time{
+    position:absolute;
+    bottom:226px;
+    left:330px;
+    width:190px;
+    height:70px;
+    background-color: blue;
+    transform: rotate(-25deg);
+    color:#ffffff;
+    font-size: 12px;
+    font-family: 'Rubik Mono One', sans-serif;
+    line-height: 70px;
+    z-index: 1;
+    box-shadow: 10px 10px 10px #02000f79;
+    transition: background-color 2s;
+}
+.ticket{
+    position: absolute;
+    bottom:50px;
+    left:50px;
+    width:250px;
+    height:250px;
+    background-color: blue;
+    transform: skew(30deg);
+    box-shadow: 10px 10px 10px #02000f79;
+    transition: background-color 2s;
+} */
+
+/* .venue, .time, .ticket{
+animation: scrollY 
+} */
+
+/* 
+#left{
+animation: appears 1s linear;}
+
+@keyframes appears {
+    from{transform: translate(-100vw);}
+    to{transform: translate(0);}
+}
+*
+    /* 1학기 리서치 수업 리두잉 패스 확인하고 연락하기 */
